@@ -1,7 +1,11 @@
 <% if @joke.present? %>
-<p><%= @joke.content %><p>
-<%= link_to 'like', joke_like_path(@joke.id),method: :put, remote: true %>
-<%= link_to 'dislike', joke_dislike_path(@joke.id),method: :put, remote: true %>
+<div class="container">
+<p class="jokecontent"><%= @joke.content %><p>
+<div id="buttons" class="col-xs-12">
+<%= link_to 'This is funny!', joke_like_path(@joke.id), :class => "btn btn-primary col-sm-offset-2 col-sm-3",method: :put, remote: true %>
+<%= link_to 'This is not funny.', joke_dislike_path(@joke.id), :class => "btn btn-success col-sm-offset-2 col-sm-3",method: :put, remote: true %>
+</div>
+</div>
 <% else %>
 <p>"That's all the jokes for today! Come back another day!"</p>
 <% end %>

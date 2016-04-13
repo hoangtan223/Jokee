@@ -1,0 +1,45 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+	background-color: #FCFCFC;
+}
+#panel {
+	background-color: #32B266;
+	height: 200px;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.bigslogan {
+	font-size: 32px;
+	color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 500;
+}
+
+.smallslogan {
+	color: white;
+	text-align: center;
+}
+
+.jokecontent {
+	height: 420px;
+    padding-top: 240px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #FFFFFF;
+}
+
+.copyright {
+ text-align: center;
+}
