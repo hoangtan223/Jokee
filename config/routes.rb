@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   get 'jokes/index'
   root 'jokes#index'
+
+  put 'jokes/like/:id' , to: 'jokes#like', as: 'joke_like'
+  put 'jokes/dislike/:id' , to: 'jokes#dislike', as: 'joke_dislike'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

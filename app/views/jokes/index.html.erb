@@ -1,2 +1,7 @@
-<h1>Jokes#index</h1>
-<p>Find me in app/views/jokes/index.html.erb</p>
+<% if @joke.present? %>
+<p><%= @joke.content %><p>
+<%= link_to 'like', joke_like_path(@joke.id),method: :put, remote: true %>
+<%= link_to 'dislike', joke_dislike_path(@joke.id),method: :put, remote: true %>
+<% else %>
+<p>"That's all the jokes for today! Come back another day!"</p>
+<% end %>
