@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JokeeApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jokee</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
 </head>
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-      <h2>FUTUREWORKZ</h2>
-      </div>
-      <div id="navbar2" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
-    </div>
-    <!--/.container-fluid -->
-</nav>
-<div id="panel"class="col-xs-12">
-	<h1 class="bigslogan col-xs-12">A joke a day keeps the doctor away</h1>
-	<p class="lead smallslogan">If you joke wrong way, your teeth have to pay (Serious)</p>
-</div>
-<%= yield %>
-<footer class="footer">
-<p class="copyright">Handcrafted by Tan Bui - Futureworkz Rails Test</p>
-</footer>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<h2>FUTUREWORKZ</h2>
+			</div>
+			<div id="navbar2" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+		<!--/.container-fluid -->
+	</nav>
+	<div id="panel"class="col-xs-12">
+		<h1 class="bigslogan col-xs-12">A joke a day keeps the doctor away</h1>
+		<p class="lead smallslogan">If you joke wrong way, your teeth have to pay (Serious)</p>
+	</div>
+	<%= yield %>
+	<footer class="footer">
+		<p class="copyright">Handcrafted by Tan Bui - Futureworkz Rails Test</p>
+	</footer>
 </body>
 </html>

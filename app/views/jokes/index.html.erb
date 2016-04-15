@@ -1,13 +1,14 @@
-<% if @joke.present? %>
+
 <div class="col-xs-12">
-	<div class="container">
+	<div id="contentArea" class="container">
+		<% if @joke.present? %>
 		<p class="jokecontent"><%= @joke.content %></p>
 		<div id="buttons" class="col-xs-12">
-			<%= link_to 'This is funny!', joke_like_path(@joke.id), :class => "btn btn-primary col-sm-offset-2 col-sm-3",method: :put, remote: true %>
-			<%= link_to 'This is not funny.', joke_dislike_path(@joke.id), :class => "btn btn-success col-sm-offset-2 col-sm-3",method: :put, remote: true %>
+			<%= link_to 'This is funny!', joke_like_path(@joke.id), :id => "like_button",:class => "btn btn-primary col-sm-offset-2 col-sm-3 col-xs-12",method: :put, remote: true %>
+			<%= link_to 'This is not funny.', joke_dislike_path(@joke.id),:id => "dislike_button", :class => "btn btn-success col-sm-offset-2 col-sm-3 col-xs-12",method: :put, remote: true %>
 		</div>
+		<% else %>
+		<h4 class="noJokeMessage">That's all the jokes for today! Come back another day!</h4>
+		<% end %>
 	</div>
 </div>
-<% else %>
-<p>"That's all the jokes for today! Come back another day!"</p>
-<% end %>

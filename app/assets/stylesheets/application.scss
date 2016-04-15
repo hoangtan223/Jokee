@@ -43,3 +43,14 @@ body {
 .copyright {
  text-align: center;
 }
+
+.noJokeMessage {
+  text-align: center;
+  padding-top: 50px;
+}
+
+@media (max-width: 768px){
+  #buttons a.btn{
+    margin-bottom: 5px;
+  }
+}
