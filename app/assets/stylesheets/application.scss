@@ -36,12 +36,14 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 60px;
+  height: 25px;
   background-color: #FFFFFF;
+  border-top: solid 1px #BDBDBD;
 }
 
 .copyright {
  text-align: center;
+ padding-top: 2px;
 }
 
 .noJokeMessage {
